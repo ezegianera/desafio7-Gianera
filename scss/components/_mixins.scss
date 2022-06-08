@@ -1,0 +1,42 @@
+// Declaracion de estructuras flex
+
+@mixin flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-start-center {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+@mixin flex-evenly-center {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-evenly-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+// Declaracion de tamaños de imagenes
+
+@mixin medidas-img ($width, $height) {
+    width: $width;
+    height: $height;
+}

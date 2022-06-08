@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <!-- Palabras claves-->
+    <meta name="keywords" content="Cerveza, Valle, Lerma, Contacto, Mensaje, Escribinos, Correo, Mail, Celular, Telefono">
+
+    <!-- Descripcion de la pagina-->
+    <meta name="description" content="Cerveza Valle de Lerma, cervecería artesanal salteña. Comunicate con nosotros, mandanos tus dudas, consultas o sugerencias y nos contactamos con vos.">
+
+     <!-- Inserción de favicon-->
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <!-- Link del CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Fuente de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- Titulo de la pagina-->
+    <title>Contactanos | Valle de Lerma</title>
+</head>
+
+<body>
+    <header>
+        <!-- Logo elemento pictórico-->
+        <div class="header__izq">
+            <div class="header__logo">
+                <a href="../index.html"><img src="../img/favicon.png" alt="logo valle de lerma"
+                        class="header__logo--img"></a>
+            </div>
+            <!-- Logo completo-->
+            <div class="header__titulo">
+                <a href="../index.html"><img src="../img/logoV.png" alt="titulo valle de lerma"
+                        class="header__logo--img"></a>
+            </div>
+        </div>
+        <!-- Menú de navegación principal-->
+        <nav class="header__menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <img src="../img/barblanco.png" alt="menuBar">
+            </label>
+            <ul class="header__menu--lista">
+                <li class="header__menu--item">
+                    <a href="../index.html" class="aHome">Home</a>
+                </li>
+                <li class="header__menu--item">
+                    <a href="nosotros.html" class="aMedio">Nosotros</a>
+                </li>
+                <li class="header__menu--item">
+                    <a href="cervezas.html" class="aMedio">Cervezas</a>
+                </li>
+                <li class="header__menu--item">
+                    <a href="club-vdl.html" class="aMedio">Club</a>
+                </li>
+                <li class="header__menu--item">
+                    <a href="contacto.html" class="aContacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Sub-bloque derecho del encabezado-->
+        <div class="header__iconos">
+            <!-- Iconos de acceso rápido a redes de contacto-->
+            <div>
+                <a href="https://www.facebook.com/cervezavalledelerma" target="_blank"><img
+                        src="../img/facebook-icono.png" alt="Seguínos en facebook"></a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/cervezavalledelerma/" target="_blank"><img
+                        src="../img/Instagram-icono.png" alt="Seguínos en instagram"></a>
+            </div>
+            <div class="header__iconos--whatsapp">
+                <a href="https://wa.me/543875793306" target="_blank"><img src="../img/whatsapp-icono.png"
+                        alt="Contactanos por WhatsApp"></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="comain">
+        <h1 class="comain__subtitulo">Mandanos un mensaje</h1>
+
+        <form class="comain__form"> 
+
+            <div class="comain__form--div">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" class="comain__form--input" required>
+            </div>
+            <div class="comain__form--div">
+                <label for="mail">Email: </label>
+                <input type="email" name="mail" class="comain__form--input" required>
+            </div>
+            <div class="comain__form--div">
+                <label for="tel">Telefono: </label>
+                <input type="tel" name="tel" class="comain__form--input" required>
+            </div>
+            <div class="comain__form--div">
+                <label for="comentarios">Mensaje: </label>
+                <textarea name="comentarios" class="comain__form--com"></textarea>
+            </div>
+            <div class="comain__form--botones">
+                <input type="submit" value="Enviar" class="comain__form--enviar">
+                <input type="reset" value="Restablecer" class="comain__form--rest">
+            </div>
+
+        </form>
+    </main>
+
+    <footer class="footer">
+
+        <section class="footer__arriba">
+            <img src="../img/logoH.png" alt="Logo institucional cerveza valle de lerma" class="footer__logo">
+        </section>
+
+        <section class="footer__bajo">
+
+            <!-- Sub-bloque de información de fábrica-->
+            <div class="footer__fabrica">
+                <h2 class="footer__fabrica--subtitulo">Fabrica</h2>
+                <ul>
+                    <li>Calle O'Higgins 1120</li>
+                    <li>Ciudad de Salta</li>
+                    <li>Argentina</li>
+                </ul>
+            </div>
+
+            <!-- Sub-bloque de información de contacto-->
+            <div class="footer__contacto">
+                <h2 class="footer__contacto--subtitulo">Contacto</h2>
+                <a href="https://www.facebook.com/cervezavalledelerma" target="_blank"><img
+                        src="../img/facebook-icono.png" alt="Seguínos en facebook" height="30" width="30"></a>
+                <a href="https://www.instagram.com/cervezavalledelerma/" target="_blank"><img
+                        src="../img/Instagram-icono.png" alt="Seguínos en instagram" height="30" width="30"></a>
+                <a href="https://wa.me/543875793306" target="_blank"><img src="../img/whatsapp-icono.png"
+                        alt="Contactanos por WhatsApp" height="30" width="30"></a>
+            </div>
+
+        </section>
+
+        <!-- Derechos-->
+        <h2 class="footer__derechos">2022. Cerveza Valle de Lerma. Todos los derechos reservados.</h2>
+    </footer>
+
+</body>
+
+</html>

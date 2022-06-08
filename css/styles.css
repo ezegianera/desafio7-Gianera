@@ -1,0 +1,443 @@
+@charset "UTF-8";
+/* Reseteo de estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.imain .imain__catalogo .imain__catalogo--subtitulo, .imain .imain__clubValle .imain__clubValle--subtitulo {
+  text-align: center;
+  margin: 1rem auto;
+  font-family: brewery;
+  font-size: 5.2vw; }
+
+/* Inserción de fuentes locales */
+@font-face {
+  font-family: caredrock;
+  src: url(../fuentes/caredrock/otf/CaredrockInline.otf); }
+
+@font-face {
+  font-family: brewery;
+  src: url(../fuentes/local-brewery-sans/LocalBrewerySans.ttf); }
+
+/* ESTRUCTURA DESKTOP FIRST */
+/* Maquetado de estructura de todos los encabezados */
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  z-index: 1;
+  border-bottom: 5px solid #db492c; }
+  header .header__izq {
+    height: 6rem;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center; }
+    header .header__izq div a .header__logo--img {
+      width: auto;
+      height: 100%; }
+  header .header__titulo a img {
+    width: auto;
+    height: 100%; }
+  header nav #check {
+    display: none; }
+  header nav .checkbtn {
+    display: none; }
+  header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center; }
+    header nav ul li {
+      list-style-type: none; }
+      header nav ul li a {
+        text-align: center;
+        text-decoration: none;
+        font-family: brewery;
+        font-size: 2rem;
+        color: white; }
+        header nav ul li a:link {
+          text-align: center;
+          text-decoration: none;
+          font-family: brewery;
+          font-size: 2rem;
+          color: white; }
+        header nav ul li a:visited {
+          text-align: center;
+          text-decoration: none;
+          font-family: brewery;
+          font-size: 2rem;
+          color: white; }
+        header nav ul li a:hover {
+          border-bottom: 2px solid #db492c; }
+      header nav ul li .aMedio {
+        margin: 0 2.6rem; }
+      header nav ul li .aHome {
+        margin: 0 3rem 0 0; }
+      header nav ul li .aContacto {
+        margin: 0 0 0 3rem; }
+  header .header__iconos {
+    margin: 0 0 0 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .header__iconos div {
+      margin: 0 0.7rem; }
+      header .header__iconos div a img {
+        width: 2rem;
+        height: 2rem; }
+
+/* Estilos para todos los mains */
+body {
+  width: 99.5;
+  overflow-x: hidden; }
+
+/* Maquetado de estructura de todos los pies de pagina */
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background-color: black; }
+  .footer .footer__arriba {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center; }
+    .footer .footer__arriba .footer__logo {
+      width: 28rem;
+      height: auto; }
+  .footer .footer__bajo {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 1rem 0; }
+    .footer .footer__bajo .footer__fabrica .footer__fabrica--subtitulo {
+      color: white;
+      margin: 0 15px;
+      font-family: brewery;
+      font-size: 3.125rem; }
+    .footer .footer__bajo .footer__fabrica ul {
+      color: white;
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      font-size: 1.25rem;
+      margin: 15px; }
+      .footer .footer__bajo .footer__fabrica ul li {
+        list-style-type: none; }
+    .footer .footer__bajo .footer__contacto {
+      margin: 0 1.5rem; }
+      .footer .footer__bajo .footer__contacto .footer__contacto--subtitulo {
+        font-family: brewery;
+        font-size: 3.125rem;
+        color: white; }
+      .footer .footer__bajo .footer__contacto a img {
+        width: 2rem;
+        height: 2rem;
+        margin: 0 0.5rem; }
+  .footer .footer__derechos {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-family: caredrock; }
+
+/* Estructura para la pagina INDEX */
+/* Estilos para el main */
+.imain {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-areas: "foto1 foto1 foto1 fotot1" "prese prese prese prese" "catal catal catal catal" "catal catal catal catal" "clubv clubv clubv clubv" "clubv clubv clubv clubv";
+  background-color: black;
+  row-gap: 1rem;
+  border-bottom: 5px solid #db492c; }
+  .imain .imain__figure {
+    grid-area: foto1;
+    justify-self: center;
+    align-self: center; }
+    .imain .imain__figure .imain__figure--foto1 {
+      width: 100vw;
+      height: auto; }
+  .imain .imain__presentacion {
+    grid-area: prese;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw; }
+    .imain .imain__presentacion .imain__presentacion--foto {
+      width: 50%; }
+      .imain .imain__presentacion .imain__presentacion--foto img {
+        width: 100%;
+        height: auto;
+        border-radius: 3px; }
+    .imain .imain__presentacion .imain__presentacion--texto {
+      width: 50%; }
+      .imain .imain__presentacion .imain__presentacion--texto .imain__presentacion--subtitulo {
+        margin: 1.7vw auto;
+        text-align: center;
+        font-family: brewery;
+        font-size: 5vw;
+        color: white; }
+      .imain .imain__presentacion .imain__presentacion--texto .imain__presentacion--parrafo {
+        margin: 0 1.7vw;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: 1.7vw;
+        color: white; }
+  .imain .imain__catalogo {
+    grid-area: catal;
+    width: 100vw; }
+    .imain .imain__catalogo .imain__catalogo--subtitulo a {
+      text-decoration: none;
+      color: white; }
+      .imain .imain__catalogo .imain__catalogo--subtitulo a:link, .imain .imain__catalogo .imain__catalogo--subtitulo a:visited {
+        text-decoration: none;
+        color: white; }
+    .imain .imain__catalogo .imain__catalogo--cervezas {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap; }
+      .imain .imain__catalogo .imain__catalogo--cervezas figure a img {
+        width: 20rem;
+        height: 34.5rem;
+        border-radius: 12%; }
+  .imain .imain__clubValle {
+    grid-area: clubv;
+    width: 100vw; }
+    .imain .imain__clubValle .imain__clubValle--subtitulo a {
+      text-decoration: none;
+      color: white; }
+      .imain .imain__clubValle .imain__clubValle--subtitulo a:link, .imain .imain__clubValle .imain__clubValle--subtitulo a:visited {
+        text-decoration: none;
+        color: white; }
+    .imain .imain__clubValle .imain__clubValle--img {
+      position: relative;
+      bottom: -0.3rem; }
+      .imain .imain__clubValle .imain__clubValle--img a img {
+        width: 100%;
+        height: auto; }
+
+/*-----------------------------------------------------------------------------------------*/
+/* Query para tablets "acostadas" */
+@media screen and (max-width: 1300px) {
+  /* Maquetado de estructura de todos los encabezados */
+  header {
+    height: 5rem; }
+    header .header__izq {
+      height: 5rem; }
+    header nav ul li a {
+      font-size: 1.5rem; }
+      header nav ul li a:link {
+        font-size: 1.5rem; }
+      header nav ul li a:visited {
+        font-size: 1.5rem; }
+    header nav ul li .aMedio {
+      margin: 0 1.25vw; }
+    header nav ul li .aHome {
+      margin: 0 1.25vw 0 0; }
+    header nav ul li .aContacto {
+      margin: 0 0 0 1.25vw; }
+    header .header__iconos div a img {
+      width: 1.5rem;
+      height: 1.5rem; }
+  /* Maquetado de estructura de todos los pies de pagina */
+  .footer .footer__arriba .footer__logo {
+    width: 23vw;
+    height: auto; }
+  .footer .footer__bajo .footer__fabrica .footer__fabrica--subtitulo {
+    font-size: 2.60vw; }
+  .footer .footer__bajo .footer__fabrica ul {
+    font-size: 1.2vw; }
+  .footer .footer__bajo .footer__contacto .footer__contacto--subtitulo {
+    font-size: 2.60vw; }
+  .footer .footer__bajo .footer__contacto a img {
+    width: 1.5rem;
+    height: 1.5rem; }
+  .footer .footer__derechos {
+    font-size: 1.5vw; }
+  /* Estructura para la pagina INDEX */
+  /* Estilos para el main */
+  .imain .imain__catalogo .imain__catalogo--subtitulo {
+    font-size: 7vw; }
+  .imain .imain__catalogo .imain__catalogo--cervezas {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    column-gap: 4vw;
+    row-gap: 1.3vw; }
+    .imain .imain__catalogo .imain__catalogo--cervezas .imain__catalogo--cervezas-kolsch,
+    .imain .imain__catalogo .imain__catalogo--cervezas .imain__catalogo--cervezas-porter {
+      justify-self: flex-end; }
+  .imain .imain__clubValle .imain__clubValle--subtitulo {
+    font-size: 7vw; } }
+
+/*-----------------------------------------------------------------------------------------*/
+/* Query para tablets verticales */
+@media screen and (max-width: 1024px) {
+  /* Maquetado de estructura de todos los encabezados */
+  header nav ul li a {
+    font-size: 1.4rem; }
+    header nav ul li a:link {
+      font-size: 1.4rem; }
+    header nav ul li a:visited {
+      font-size: 1.4rem; }
+  header nav ul li .aMedio {
+    margin: 0 1.25vw; }
+  header nav ul li .aHome {
+    margin: 0 1.25vw 0 0; }
+  header nav ul li .aContacto {
+    margin: 0 0 0 1.25vw; }
+  header .header__iconos {
+    margin: 0 0.7rem; }
+    header .header__iconos div {
+      margin: 0 0.3rem; }
+      header .header__iconos div a img {
+        width: 1.25rem;
+        height: 1.25rem; }
+  /* Maquetado de estructura de todos los pies de pagina */
+  .footer .footer__arriba .footer__logo {
+    width: 35vw;
+    height: auto; }
+  .footer .footer__bajo .footer__fabrica .footer__fabrica--subtitulo {
+    font-size: 4.5vw; }
+  .footer .footer__bajo .footer__fabrica ul {
+    font-size: 2.2vw; }
+  .footer .footer__bajo .footer__contacto .footer__contacto--subtitulo {
+    font-size: 4.5vw; }
+  .footer .footer__bajo .footer__contacto a img {
+    width: 3vw;
+    height: 3vw;
+    margin: 0 0.7vw; }
+  .footer .footer__derechos {
+    font-size: 2.5vw; }
+  /* Estructura para la pagina INDEX */
+  /* Estilos para el main */
+  .imain .imain__presentacion {
+    flex-direction: column;
+    align-items: center;
+    width: 100vw; }
+    .imain .imain__presentacion .imain__presentacion--foto {
+      width: 100%; }
+    .imain .imain__presentacion .imain__presentacion--texto {
+      width: 100%; }
+      .imain .imain__presentacion .imain__presentacion--texto .imain__presentacion--subtitulo {
+        margin: 1.7vw auto;
+        text-align: center;
+        font-size: 7vw; }
+      .imain .imain__presentacion .imain__presentacion--texto .imain__presentacion--parrafo {
+        margin: 0 15vw;
+        font-size: 2.7vw; }
+  .imain .imain__catalogo .imain__catalogo--cervezas figure a img {
+    width: 28vw;
+    height: 48vw; } }
+
+/*----------------------------------------------------------------------------------------*/
+/* Query para celulares y tablets pequeñas */
+@media screen and (max-width: 650px) {
+  /* Maquetado de estructura de todos los encabezados */
+  header {
+    height: 4rem; }
+    header .header__izq {
+      height: calc(4rem - 5px); }
+    header .header__titulo a img {
+      display: none; }
+    header nav {
+      align-self: center; }
+      header nav .checkbtn {
+        cursor: pointer;
+        display: flex;
+        align-content: center; }
+        header nav .checkbtn img {
+          height: 35px; }
+      header nav ul {
+        background-color: #db492c;
+        position: fixed;
+        width: 100vw;
+        top: 4rem;
+        left: 500vw;
+        display: block;
+        text-align: center;
+        transition: all .4s ease-in-out; }
+        header nav ul li {
+          padding: 2vw 0; }
+          header nav ul li a {
+            font-size: 8vw;
+            margin: 0;
+            padding: 2vw; }
+            header nav ul li a:link {
+              font-size: 8vw;
+              margin: 0;
+              padding: 2vw; }
+            header nav ul li a:visited {
+              font-size: 8vw;
+              margin: 0;
+              padding: 2vw; }
+          header nav ul li .aMedio {
+            margin: 0 1.25vw; }
+          header nav ul li .aHome {
+            margin: 0 1.25vw 0 0; }
+          header nav ul li .aContacto {
+            margin: 0 0 0 1.25vw; }
+      header nav #check:checked ~ .header__menu--lista {
+        left: 0; }
+    header .header__iconos {
+      margin: 0;
+      height: calc(4rem - 5px);
+      width: calc(4rem - 5px); }
+      header .header__iconos div {
+        align-self: center; }
+        header .header__iconos div a img {
+          width: 1.25rem;
+          height: 1.25rem; }
+      header .header__iconos .header__iconos--whatsapp {
+        display: none; }
+  /* Maquetado de estructura de todos los pies de pagina */
+  .footer .footer__arriba .footer__logo {
+    width: 60vw;
+    height: auto; }
+  .footer .footer__bajo {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0; }
+    .footer .footer__bajo .footer__fabrica .footer__fabrica--subtitulo {
+      text-align: center;
+      font-size: 6.5vw;
+      margin: 0;
+      margin-bottom: 1vw; }
+    .footer .footer__bajo .footer__fabrica ul {
+      text-align: center;
+      font-size: 3.5vw;
+      margin: 0;
+      margin-bottom: 5vw; }
+    .footer .footer__bajo .footer__contacto {
+      margin: 0; }
+      .footer .footer__bajo .footer__contacto .footer__contacto--subtitulo {
+        font-size: 6.5vw;
+        margin: 0;
+        margin-bottom: 1vw; }
+      .footer .footer__bajo .footer__contacto a img {
+        width: 3.2vw;
+        height: 3.2vw;
+        margin: 0 1.7vw; }
+  .footer .footer__derechos {
+    font-size: 3.5vw; }
+  /* Estructura para la pagina INDEX */
+  /* Estilos para el main */
+  .imain .imain__presentacion .imain__presentacion--texto .imain__presentacion--subtitulo {
+    font-size: 9vw; }
+  .imain .imain__presentacion .imain__presentacion--texto .imain__presentacion--parrafo {
+    font-size: 4.5vw;
+    margin: 0 10vw; }
+  .imain .imain__catalogo .imain__catalogo--subtitulo {
+    font-size: 9vw; }
+  .imain .imain__catalogo .imain__catalogo--cervezas figure a img {
+    width: 35vw;
+    height: 60vw; }
+  .imain .imain__catalogo .imain__catalogo--cervezas .imain__catalogo--cervezas-kolsch,
+  .imain .imain__catalogo .imain__catalogo--cervezas .imain__catalogo--cervezas-porter {
+    justify-self: flex-end; }
+  .imain .imain__clubValle .imain__clubValle--subtitulo {
+    font-size: 9vw; } }
